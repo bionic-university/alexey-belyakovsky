@@ -2,7 +2,6 @@
 
 namespace BionicUniversity\Bundle\BlogBundle\Entity;
 
-use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -37,7 +36,7 @@ class Comment
     private $createdAt;
 
     /**
-     * @var ArrayCollection
+     * @var Post
      * @ORM\ManyToOne(targetEntity="BionicUniversity\Bundle\BlogBundle\Entity\Post", inversedBy="comments")
      *
      */
@@ -76,6 +75,14 @@ class Comment
     public function getPost()
     {
         return $this->post;
+    }
+
+    /**
+     * @param Post $post
+     */
+    public function setPost(Post $post)
+    {
+        $this->post = $post;
     }
 
     /**
