@@ -1,0 +1,6 @@
+services:
+    text_transformer:
+        class: BionicUniversity\Bundle\BlogBundle\Text\TextTransformer
+        arguments: [@text_reverser]
+    text_reverser:
+        class: BionicUniversity\Bundle\BlogBundle\Text\TextInverter
