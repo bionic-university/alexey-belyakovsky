@@ -1,0 +1,12 @@
+{
+    "name": "spartak/lesson-6",
+    "authors": [
+        {
+            "name": "a.belyakovskiy",
+            "email": "2697024@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/symfony": "2.6.*@dev"
+    }
+}
