@@ -1,0 +1,4 @@
+bionic_project:
+    resource: "@BionicProjectBundle/Resources/config/routing.yml"
+    prefix:   /
+

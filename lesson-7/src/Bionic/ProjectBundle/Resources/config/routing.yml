@@ -1,0 +1,3 @@
+bionic_project:
+    resource: "@BionicProjectBundle/Controller"
+    type:     annotation

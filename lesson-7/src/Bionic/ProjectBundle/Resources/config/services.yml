@@ -1,0 +1,7 @@
+services:
+    on_project_create:
+        class: Bionic\ProjectBundle\EventListener\ProjectListener
+        calls:
+            - [setProjectId]
+        tags:
+            - {name: kernel.event_listener, event: on_project_create, method: onProjectCreate}
